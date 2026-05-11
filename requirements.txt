@@ -4,6 +4,7 @@ fastapi==0.111.0
 uvicorn==0.29.0
 pydantic==2.7.1
 groq==0.9.0
+httpx==0.27.2
 torch
 sentence-transformers==3.0.0
 faiss-cpu
