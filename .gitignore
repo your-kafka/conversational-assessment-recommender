@@ -1,0 +1,49 @@
+# --- Python Specific ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# --- Virtual Environment ---
+venv/
+ENV/
+pyvenv.cfg
+.venv/
+
+# --- Environment Secrets ---
+.env
+.env.test
+.env.local
+
+# --- IDEs and Workspace ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# --- Assessment Pipeline Specific ---
+# We keep faiss_index.bin and catalog_index.json because 
+# Render needs them to run the RAG pipeline!
+# However, we exclude any temporary logs or test results.
+logs/
+*.log
