@@ -1,13 +1,13 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+
 fastapi==0.111.0
 uvicorn==0.29.0
 pydantic==2.7.1
 groq==0.9.0
-# Explicitly use the CPU version of torch to keep the build light
-torch --index-url https://download.pytorch.org/whl/cpu
+torch
 sentence-transformers==3.0.0
 faiss-cpu
 rank-bm25==0.2.2
 python-dotenv==1.0.1
 numpy==1.26.4
-# Added for modern FastAPI compatibility
 email-validator==2.1.1
