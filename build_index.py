@@ -30,9 +30,9 @@ def main():
     with open("catalog.json", "r", encoding="utf-8") as f:
         catalog = json.load(f)
 
-    print("Loading BAAI embedding model...")
+    print("Loading MiniLM embedding model...")
     # We use the exact same model that retriever.py uses
-    embedder = SentenceTransformer('BAAI/bge-large-en-v1.5')
+    embedder = SentenceTransformer('all-MiniLM-L6-v2')
 
     # 1. Transform the catalog into Semantic Prose strings
     print("Transforming catalog into Semantic Prose...")

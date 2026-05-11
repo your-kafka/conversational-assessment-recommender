@@ -13,7 +13,8 @@ class HybridRetriever:
         self.name_to_item = {item["name"]: item for item in self.catalog}
             
         self.index = faiss.read_index(faiss_path)
-        self.embedder = SentenceTransformer('BAAI/bge-large-en-v1.5')
+        # Swapping from bge-large (1.34GB) to all-MiniLM-L6-v2 (80MB)
+        self.embedder = SentenceTransformer('all-MiniLM-L6-v2')
         
         # Build "Semantic Prose" for BM25: Prepend Keys and Name to Description
         tokenized_corpus = []
